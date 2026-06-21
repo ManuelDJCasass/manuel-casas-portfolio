@@ -1081,3 +1081,133 @@ main,
   justify-content: flex-end;
   align-items: center;
 }
+
+/* MOBILE HERO FIX */
+
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+  }
+
+  .navbar__content {
+    min-height: auto;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .navbar__links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem 1.1rem;
+    font-size: 0.95rem;
+    line-height: 1.2;
+  }
+
+  .hero--editorial {
+    min-height: auto;
+    padding: 0 1rem;
+    overflow: hidden;
+  }
+
+  .hero__editorial {
+    min-height: auto;
+    padding: 3.5rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  .hero__meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.45rem;
+    font-size: 0.72rem;
+    line-height: 1.25;
+    letter-spacing: 0.13em;
+    max-width: 100%;
+  }
+
+  .hero__statement {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    text-align: left;
+    justify-items: start;
+    font-size: clamp(4.2rem, 20vw, 6.4rem);
+    line-height: 0.8;
+    letter-spacing: -0.105em;
+    overflow-wrap: normal;
+  }
+
+  .hero__statement span {
+    max-width: 100%;
+  }
+
+  .hero__summary {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+
+  .hero__profile-text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero__profile-text p {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .hero__profile-text p:first-child {
+    font-size: 1.05rem;
+    line-height: 1.35;
+  }
+
+  .hero__buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  .hero__buttons .button {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .ascii-background pre {
+    font-size: 0.48rem;
+    line-height: 0.78;
+    color: rgba(17, 17, 17, 0.16);
+    transform: translate(-18vw, -2vh) scale(1.05);
+  }
+}
+
+@media (max-width: 430px) {
+  .hero__statement {
+    font-size: clamp(3.6rem, 18vw, 5rem);
+    line-height: 0.82;
+    letter-spacing: -0.095em;
+  }
+
+  .hero__profile-text p {
+    font-size: 0.95rem;
+  }
+
+  .hero__profile-text p:first-child {
+    font-size: 1rem;
+  }
+
+  .ascii-background pre {
+    font-size: 0.42rem;
+    transform: translate(-24vw, -2vh) scale(1);
+  }
+}
