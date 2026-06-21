@@ -8,6 +8,8 @@ function ProjectCard({ project }) {
         <span>{project.category}</span>
       </div>
 
+      //xd 
+
       <div className="project-card__content">
         <p className="project-card__category">{project.category}</p>
 
@@ -44,3 +46,5 @@ function ProjectCard({ project }) {
 }
 
 export default ProjectCard
+
+//xd
