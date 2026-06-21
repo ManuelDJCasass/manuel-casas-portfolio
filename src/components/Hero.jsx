@@ -1,32 +1,43 @@
 function Hero() {
   return (
-    <section id="home" className="hero">
-      <div className="container hero__content">
-        <p className="hero__eyebrow">Portfolio</p>
+    <section id="home" className="hero hero--editorial">
+      <div className="container hero__editorial">
+        <div className="hero__meta">
+          <p>Applied Mathematics and Computing Student</p>
+          
+        </div>
 
-        <h1>Hi, I’m Manuel Casas Morales.</h1>
+        <h1 className="hero__statement">
+          <span>Manuel de Jesús</span>
+          <span>Casas Morales</span>
+        </h1>
 
-        <h2>
-          Applied Mathematics and Computing Student | Data Analytics, Business
-          Intelligence & Software Development
-        </h2>
+        <div className="hero__summary">
+          <div className="hero__profile-text">
+            <p>
+              Data Analytics, Business Intelligence & Software Development.
+            </p>
 
-        <p className="hero__description">
-          I work with structured data, dashboards, KPI tracking, SQL queries,
-          ETL/ELT processes, and web technologies to transform information into
-          useful insights and build efficient digital solutions.
-        </p>
+            <p>
+              I transform structured data into useful insights and build digital
+              solutions using SQL, dashboards, KPI tracking, ETL/ELT processes,
+              databases and web technologies.
+            </p>
+          </div>
 
-        <div className="hero__buttons">
-          <a href="#projects" className="button button--primary">
-            View Projects
-          </a>
-          <a href="/manuel-casas-cv.pdf" className="button button--secondary">
-            Download CV
-          </a>
-          <a href="#contact" className="button button--ghost">
-            Contact Me
-          </a>
+          <div className="hero__buttons">
+            <a href="#projects" className="button button--primary">
+              View Projects
+            </a>
+
+            <a href="#expertise" className="button button--secondary">
+              Explore Skills
+            </a>
+
+            <a href="#contact" className="button button--ghost">
+              Contact Me
+            </a>
+          </div>
         </div>
       </div>
     </section>

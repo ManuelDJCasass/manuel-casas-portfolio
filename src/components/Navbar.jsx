@@ -6,9 +6,9 @@ function Navbar() {
           Manuel Casas
         </a>
 
-        <nav className="navbar__links">
+        <nav className="navbar__links" aria-label="Main navigation">
           <a href="#about">About</a>
-          <a href="#skills">Skills</a>
+          <a href="#expertise">Expertise</a>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
           <a href="#contact">Contact</a>
